@@ -1,0 +1,43 @@
+
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher);
+
+        ByteArrayOutputStream bos = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.PNG, 100, bos);
+        bArray = bos.toByteArray();
+
+           --------------------------------------------
+
+            Bitmap bm = BitmapFactory.decodeByteArray(bArray, 0, bArray.length);
+            DisplayMetrics dm = new DisplayMetrics();
+            getWindowManager().getDefaultDisplay().getMetrics(dm);
+            dm.heightPixels = 90;
+            dm.widthPixels = 50;
+
+            imageView.setMinimumHeight(dm.heightPixels);
+            imageView.setMinimumWidth(dm.widthPixels);
+            imageView.setImageBitmap(bm);
+
+            -----------------------------------
+
+
+            android:inputType=""
+
+            -------------------------------------------------
+
+
+            <!--<?xml version="1.0" encoding="utf-8"?>-->
+            <!--<Spinner xmlns:android="http://schemas.android.com/apk/res/android"-->
+
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:text="Sample Text"-->
+                <!--android:textColor="#000000">-->
+
+            <!--</Spinner>-->
+            ----------------------------------------------------
+
+                    android:clipChildren="false"
+                    android:ellipsize="end"

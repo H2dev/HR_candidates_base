@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">HR Candidates Base</string>
+    <string name="job_vacancy_data_saved">Job vacancy data saved.</string>
+    <string name="are_you_sure_save_job">Are you sure?</string>
+    <string name="are_you_sure_exit_edit_job">Are you sure? Changes will be lost.</string>
+    <string name="title_must_be_entered">Title must be entered.</string>
+    <string name="person_data_saved">Person data saved.</string>
+    <string name="person_deleted">Person deleted.</string>
+    <string name="name_must_be_entered">Name must be entered.</string>
+    <string name="are_you_sure_exit_edit_person">Are you sure? Changes will be lost.</string>
+    <string name="are_you_sure_save_person">Are you sure?</string>
+    <string name="press_back_twice">Press back twice to exit.</string>
+    <string name="job_vacancy_deleted">Job vacancy deleted.</string>
+    <string name="all_job_vacancies_deleted">All job vacancies deleted.</string>
+    <string name="are_you_sure_delete_all_job">Are you sure? You are about to delete every job vacancy including all candidates.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="are_you_sure_delete_job">Are you sure? That will also delete all job candidates related to this job vacancy.</string>
+    <string name="are_you_sure_delete_person">Are you sure?</string>
+    <string name="ok">Ok</string>
+    <string name="job_vacancy_list">Job vacancy list</string>
+    <string name="job_candidates_list">Job candidates list</string>
+    <string name="title">Title</string>
+    <string name="job_advert_end_date">Job Advert End Date</string>
+    <string name="description">Description</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="language">Language</string>
+    <string name="delete_all">Delete all</string>
+    <string name="view_candidates">Candidates list</string>
+    <string name="view_job_vacancy">View job vacancy details</string>
+    <string name="view_person">View person details</string>
+    <string name="edit_job">Edit job vacancy details</string>
+    <string name="delete_job">Delete</string>
+    <string name="edit_person">Edit person details</string>
+    <string name="delete_person">Delete</string>
+    <string name="english" translatable="false">English</string>
+    <string name="hrvatski" translatable="false">Hrvatski</string>
+    <string name="options">Options</string>
+    <string name="edit">Edit</string>
+    <string name="back">Go Back</string>
+    <string name="change_the_photo">Change photo</string>
+    <string name="select_picture">Select picture</string>
+    <string name="date">Date</string>
+    <string name="rating">Rating</string>
+    <string name="surname">Surname</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="address">Address</string>
+    <string name="telephone_number">Telephone number</string>
+    <string name="e_mail_address">E-mail address</string>
+    <string name="qualifications">Qualifications</string>
+
+    <!--sorting job-->
+    <string name="sortJobTitleAsc">Title ascending</string>
+    <string name="sortJobTitleDesc">Title descending</string>
+    <string name="sortDateAsc">Date ascending</string>
+    <string name="sortDateDesc">Date descending</string>
+
+    <!--sorting person-->
+    <string name="sortPersonSurnameAsc">Surname ascending</string>
+    <string name="sortPersonSurnameDesc">Surname descending</string>
+    <string name="ratingAsc">Rating ascending</string>
+    <string name="ratingDesc">Rating descending</string>
+
+    <!--data fields in JobVacancy-->
+    <string name="dbFieldJobTitle" translatable="false">title</string>
+    <string name="dbFieldJobDate" translatable="false">jobAdEndDate</string>
+
+    <!--data fields in Person-->
+    <string name="dbFieldSurname" translatable="false">surname</string>
+    <string name="dbFieldRating" translatable="false">rating</string>
+
+    <string-array name="jobOptionsMenu">
+        <item name="view_candidates">@string/view_candidates</item>
+        <item name="view_job_vacancy">@string/view_job_vacancy</item>
+        <item name="edit">@string/edit_job</item>
+        <item name="delete">@string/delete_job</item>
+    </string-array>
+
+    <string-array name="personOptionsMenu">
+        <item name="view_job_vacancy">@string/view_person</item>
+        <item name="edit">@string/edit_person</item>
+        <item name="delete">@string/delete_person</item>
+    </string-array>
+
+    <string-array name="languagesMenu">
+        <item name="english">@string/english</item>
+        <item name="hrvatski">@string/hrvatski</item>
+    </string-array>
+
+     <string-array name="jobVacancySortMenu">
+         <item name="sortJobTitleAsc">@string/sortJobTitleAsc</item>
+         <item name="sortJobTitleDesc">@string/sortJobTitleDesc</item>
+         <item name="sortDateAsc">@string/sortDateAsc</item>
+         <item name="sortDateDesc">@string/sortDateDesc</item>
+     </string-array>
+
+     <string-array name="personSortMenu">
+         <item name="sortSurnameAsc">@string/sortPersonSurnameAsc</item>
+         <item name="sortSurnameDesc">@string/sortPersonSurnameDesc</item>
+         <item name="sortRatingAsc">@string/ratingAsc</item>
+         <item name="sortRatingAsc">@string/ratingDesc</item>
+     </string-array>
+
+
+</resources>

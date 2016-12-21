@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_person"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="hr.dev.h2.hr_candidates.activity.EditPersonActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:contentInsetEnd="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetStart="0dp"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivEditPersonPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:adjustViewBounds="true"
+                android:background="@color/colorPrimaryDark"
+                android:maxHeight="200dp"
+                android:maxWidth="120dp"
+                android:scaleType="fitCenter" />
+
+            <Button
+                android:id="@+id/btChangePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/change_the_photo" />
+
+            <TextView
+                android:id="@+id/tvRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/rating" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:numStars="5"
+                android:rating="0.0"
+                android:stepSize="0.5" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/name" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="30"
+                android:inputType="textCapWords"
+                android:lines="1" />
+
+            <TextView
+                android:id="@+id/tvSurname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/surname" />
+
+            <EditText
+                android:id="@+id/etSurname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="30"
+                android:inputType="textCapWords"
+                android:lines="1" />
+
+            <TextView
+                android:id="@+id/tvDateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/date_of_birth" />
+
+            <EditText
+                android:id="@+id/etDateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="30"
+                android:focusable="false"
+                android:inputType="date"
+                android:lines="1" />
+
+            <TextView
+                android:id="@+id/tvQualifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/qualifications" />
+
+            <EditText
+                android:id="@+id/etQualifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="30"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:maxLines="15" />
+
+            <TextView
+                android:id="@+id/tvPastWorkExperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Past work experience" />
+
+            <EditText
+                android:id="@+id/etPastWorkExperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="30"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:maxLines="15" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/address" />
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="30"
+                android:inputType="text"
+                android:lines="1" />
+
+            <TextView
+                android:id="@+id/tvTelNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/telephone_number" />
+
+            <EditText
+                android:id="@+id/etTelNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="30"
+                android:inputType="phone"
+                android:lines="1" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/e_mail_address" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="30"
+                android:inputType="textEmailAddress"
+                android:lines="1" />
+
+            <TextView
+                android:id="@+id/tvInterviewNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Interview notes" />
+
+            <EditText
+                android:id="@+id/etInterviewNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="30"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:maxLines="15" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btPersonSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/save" />
+
+                <Button
+                    android:id="@+id/btPersonSaveCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cancel" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

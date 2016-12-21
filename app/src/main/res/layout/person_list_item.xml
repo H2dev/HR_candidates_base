@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*">
+
+    <TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPersonNameAndSurname"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+            <RatingBar
+                android:id="@+id/ratingBarSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:stepSize="0.5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivSmallPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:adjustViewBounds="true"
+                android:background="@color/colorPrimaryDark"
+                android:maxHeight="100dp"
+                android:maxWidth="100dp"
+                android:scaleType="fitCenter" />
+
+        </LinearLayout>
+
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hr.dev.h2.hr_candidates">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.EditPersonActivity"
+            android:parentActivityName=".activity.PersonsListActivity" />
+        <activity
+            android:name=".activity.PersonsListActivity"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.EditJobVacancyActivity"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.ViewJobVacancyActivity"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.ViewPersonActivity"
+            android:parentActivityName=".activity.PersonsListActivity" />
+
+</application>
+
+    </manifest>
